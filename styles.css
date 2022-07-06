@@ -1,0 +1,60 @@
+@keyframes changeColor {
+    50% {background-color: teal;box-shadow: 1px 1px teal;}
+    100% {background-color: #082a3a; box-shadow: 1px 1px teal;}
+    }
+body{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #00e6f6;
+    background-image: url(img/space.webp);
+    background-repeat: repeat;
+    background-origin: content-box ;
+    background-size: 1000px 1000px;
+   
+}
+.square{
+    height: 100px;
+    width: 100px;
+    background-color: #082a3a;
+    border: solid #1F6CAB;
+    display: inline-block;
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.o{
+    position: relative;
+}
+.o::after{
+    position: absolute;
+    content: "\1F47E";
+    font-size:50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;   
+}
+.x{
+    position: relative;
+}
+.x::after{
+    position: absolute;
+    content: "\👨‍🚀";
+    font-size:53px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;    
+}
+.btn_reiniciar{
+    width: 200px;
+    height: 25px;
+    background-color:#00e6f6 ;
+    color: black ;
+    font-weight: bold;
+    border: solid 0px;
+    border-radius: 5px;
+}
